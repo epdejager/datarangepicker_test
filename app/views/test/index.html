@@ -1,10 +1,16 @@
 Hello World
 <form>
-	<input name="daterange"/>
+	<input class = 'date_range daterangepickercontrol' name="daterange" data-format="DD/MMM/YYYY" data-max-date="11/Oct/2013" data-min-date="29/Dec/2009"/>
 </form>
 
 <script type="text/javascript">
 $(document).ready(function() {
-  $('input[name="daterange"]').daterangepicker({showDropdowns: true});
+  $('input[name="daterange"]').daterangepicker(
+  	{
+  		showDropdowns: true,
+		ranges: {'today': [moment(), moment()]}  		
+  	});
 });
 </script>
+
+<!-- <input autocomplete="off" class="date_range optional daterangepickercontrol input-large input-large" data-autoclose="true" data-end-date="15/Sep/2011" data-format="DD/MMM/YYYY" data-max-date="11/Oct/2013" data-min-date="29/Dec/2009" data-ranges="{&quot;1 Month&quot;:[&quot;2013-09-12&quot;,&quot;2013-10-11&quot;],&quot;3 Month&quot;:[&quot;2013-07-12&quot;,&quot;2013-10-11&quot;],&quot;6 Month&quot;:[&quot;2013-04-12&quot;,&quot;2013-10-11&quot;],&quot;1 Year&quot;:[&quot;2012-10-12&quot;,&quot;2013-10-11&quot;],&quot;Entire Range&quot;:[&quot;2009-12-29&quot;,&quot;2013-10-11&quot;]}" data-separator=" to " data-show-dropdowns="true" data-start-date="29/Dec/2009" data-todaybtn="true" data-todayhighlight="true" id="transaction_filter_date_range" name="transaction_filter[date_range]" placeholder="Date Range" size="30" type="text" value="29/Dec/2009 to 15/Sep/2011"> -->
