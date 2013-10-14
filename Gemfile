@@ -7,15 +7,20 @@ gem 'rails', '3.2.14'
 
 gem 'sqlite3'
 
-gem 'jquery-rails'
+# gem 'jquery-rails'
+# gem 'bootstrap-daterangepicker-rails',
+#       :path => '../bootstrap-daterangepicker-rails'    
 gem 'bootstrap-daterangepicker-rails',
-      :path => '../bootstrap-daterangepicker-rails'    
+      :git => 'git://github.com/epdejager/bootstrap-daterangepicker-rails',
+      :branch => 'master'
 
 gem 'momentjs-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem "therubyracer"
+  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS  
   gem 'twitter-bootstrap-rails'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
