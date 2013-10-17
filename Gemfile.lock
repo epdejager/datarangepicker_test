@@ -1,5 +1,7 @@
-PATH
-  remote: ../bootstrap-daterangepicker-rails
+GIT
+  remote: git://github.com/epdejager/bootstrap-daterangepicker-rails
+  revision: 60f8c270c6927a3736c5ce7add6b83b08aede104
+  branch: latest_bootstrap_daterangepicker
   specs:
     bootstrap-daterangepicker-rails (0.0.6)
       railties (>= 3.1)

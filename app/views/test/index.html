@@ -1,6 +1,6 @@
 Hello World
 <form>
-	<input name="daterange" />
+	<input name="daterange" />	
 </form>
 
 <script type="text/javascript">
@@ -8,7 +8,12 @@ $(document).ready(function() {
   $('input[name="daterange"]').daterangepicker(
   	{
   		showDropdowns: true,
-		ranges: {'today': [moment(), moment()]}  		
+ 		format: 'DD/MMM/YYYY',
+    	startDate: '19/Feb/2011',
+    	endDate: '08/Sep/2011',
+    	minDate: '18/Feb/2011',
+    	maxDate: '09/Sep/2011'
+		// ranges: {'today': [moment(), moment()]}  		
   	});
 });
 </script>

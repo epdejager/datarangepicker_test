@@ -8,11 +8,11 @@ gem 'rails', '3.2.14'
 gem 'sqlite3'
 
 gem 'jquery-rails'
-gem 'bootstrap-daterangepicker-rails',
-      :path => '../bootstrap-daterangepicker-rails'    
 # gem 'bootstrap-daterangepicker-rails',
-#       :git => 'git://github.com/epdejager/bootstrap-daterangepicker-rails',
-#       :branch => 'master'
+#       :path => '../bootstrap-daterangepicker-rails'    
+gem 'bootstrap-daterangepicker-rails',
+      :git => 'git://github.com/epdejager/bootstrap-daterangepicker-rails',
+      :branch => 'latest_bootstrap_daterangepicker'
 
 gem 'momentjs-rails'
 
